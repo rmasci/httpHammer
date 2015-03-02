@@ -1,6 +1,6 @@
 # httpHammer
 Allows stress testing of http Web server. 
-
+<pre>
 This makes use of Go's concurrency, and when run will open a user specified number of threads against the webserver being tested. 
 
 ]$ ./httpHammer -h 10 -u http://www.google.com
@@ -29,3 +29,4 @@ Usage: httpHammer -u <url> -h <hits> (optional) -l <times to run> -r <regexp>
   -u="": URL
 
 This will also use regular expressions to look for text within the page, and will also print out an etag if there is one in the page.
+</pre>
